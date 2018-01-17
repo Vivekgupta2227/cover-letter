@@ -1,4 +1,4 @@
-# [Cover-Letter](https://github.com/garciparedes/Cover-Letter/raw/master/cl-sergio-garciaprado.pdf)
+# [Cover-Letter](https://nbviewer.jupyter.org/github/garciparedes/cover-letter/blob/master/garciparedes-cl.pdf)
 
 
 ## Authors
