@@ -1,4 +1,4 @@
-# [Cover-Letter](https://nbviewer.jupyter.org/github/garciparedes/cover-letter/blob/master/garciparedes-cl.pdf)
+# [Cover Letter](https://nbviewer.jupyter.org/github/garciparedes/cover-letter/blob/master/garciparedes-cl.pdf)
 
 
 ## Authors
