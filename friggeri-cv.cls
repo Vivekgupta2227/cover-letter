@@ -48,14 +48,15 @@
 %%%%%%%%%
 
 \RequirePackage[quiet]{fontspec}
-\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+\RequirePackage[math-style=TeX]{unicode-math}
 
-\newfontfamily\bodyfont[]{Helvetica Neue}
-\newfontfamily\thinfont[]{Helvetica Neue UltraLight}
-\newfontfamily\headingfont[]{Helvetica Neue Condensed Bold}
+\newfontfamily\bodyfont[Path=fonts/]{Roboto-Regular}
+\newfontfamily\thinfont[Path=fonts/]{Roboto-Thin}
+\newfontfamily\headingfont[Path=fonts/]{Roboto-Medium}
+\newfontfamily\positionfont[Path=fonts/]{Roboto-LightItalic}
 
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{Helvetica Neue Light}
+\setmainfont[Path=fonts/,Mapping=tex-text, Color=textcolor]{Roboto-Light}
 
 %\setmathfont{XITS Math}
 
@@ -96,16 +97,7 @@
 \newcounter{colorCounter}
 \def\@sectioncolor#1#2#3{%
   {%
-    \color{%
-      \ifcase\value{colorCounter}%
-        blue\or%
-        red\or%
-        orange\or%
-        green\or%
-        purple\or%
-        brown\else%
-        headercolor\fi%
-    } #1#2#3%
+    \color{gray} #1#2#3%
   }%
   \stepcounter{colorCounter}%
 }
@@ -138,11 +130,13 @@
 % List environment %
 %%%%%%%%%%%%%%%%%%%%
 
+\usepackage{longtable}
+
 \setlength{\tabcolsep}{0pt}
 \newenvironment{entrylist}{%
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+  \begin{longtable}{@{\extracolsep{\fill}}p{2.2cm}l}
 }{%
-  \end{tabular*}
+  \end{longtable}
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[4]{%
@@ -166,7 +160,7 @@
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{4}(1, 4.33)
+  \begin{textblock}{4}(0.25, 4.25)
   \begin{flushright}
   \obeycr
 }{%
@@ -287,7 +281,7 @@
 
 \DeclareNameFormat{author}{%
   \small\addfontfeature{Color=lightgray}%
-  \ifblank{#3}{}{#3\space}#1%
+  \ifblank{##3}{}{##3\space}#1%
   \ifthenelse{\value{listcount}<\value{liststop}}
     {\addcomma\space}
     {}%
@@ -314,7 +308,7 @@
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
+\RequirePackage[left=4.9cm,top=2cm,right=1.5cm,bottom=1.5cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
 \hypersetup{
     colorlinks=false,
