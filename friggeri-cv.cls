@@ -84,7 +84,7 @@
       \thinfont #3%
     };
   \end{tikzpicture}
-  \vspace{2.25cm}
+  \vspace{2.5cm}
   \vspace{-2\parskip}
 }
 
@@ -308,7 +308,7 @@
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=2.25cm,top=2cm,right=2.25cm,bottom=1.5cm,nohead,nofoot]{geometry}
+\RequirePackage[left=2.25cm,top=2cm,right=2.25cm,bottom=1.5cm,nofoot]{geometry}
 \RequirePackage[hidelinks]{hyperref}
 \hypersetup{
     colorlinks=false,
