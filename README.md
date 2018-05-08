@@ -1,4 +1,4 @@
-# [Cover Letter](https://garciparedes.me/curriculum-vitae/garciparedes-cv.pdf)
+# [Cover Letter](https://garciparedes.me/cover-letter/garciparedes-cl.pdf)
 
 ## Authors
   - García Prado, Sergio: [@garciparedes](http://garciparedes.me)
