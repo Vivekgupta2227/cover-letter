@@ -1,4 +1,4 @@
-# [Cover Letter](https://nbviewer.jupyter.org/github/garciparedes/cover-letter/blob/master/garciparedes-cl.pdf)
+# [Cover Letter](https://garciparedes.me/curriculum-vitae/garciparedes-cv.pdf)
 
 ## Authors
   - García Prado, Sergio: [@garciparedes](http://garciparedes.me)
